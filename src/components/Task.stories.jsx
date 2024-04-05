@@ -35,32 +35,42 @@ export const Archived = {
   },
 };
 
-export const TitleNull = {
+export const EmptyTitleDefault = {
   args: {
     task: {
       id: '1',
       title: '',
-      state: 'TASK_ARCHIVED', 
+      state: 'TASK_INBOX', 
     },
   },
 };
 
-export const LongText = {
+export const EmptyTitleArchived = {
   args: {
     task: {
-      id: '110',
+      id: '2',
+      title: '',
+      state: 'TASK_ARCHIVED'
+    },
+  },
+};
+
+export const LongTitle = {
+  args: {
+    task: {
+      id: '3',
       title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dapibus nisl ut iaculis venenatis. Donec fermentum nisl quam, vel suscipit felis convallis et. Praesent malesuada elit vitae suscipit finibus. Nam ut dignissim tortor. Aenean in vestibulum leo, et aliquam nibh. Praesent at nisl ex. Morbi eleifend sagittis metus in interdum. Donec vulputate ex ut metus pulvinar porttitor. Morbi et odio eu ex lobortis mattis et eget metus.',
       state: '', 
     },
   },
 };
 
-export const Default3 = {
+export const TitleWithSpecCharacters = {
   args: {
     task: {
-      id: '1',
-      title: 'Введите текст',
-      state: 'TASK_PINNED'
+      id: '4',
+      title: 'Spec characters: @#$%^&*(){}[]<>',
+      state: 'TASK_INBOX'
     },
   },
 };
